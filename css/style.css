@@ -1,3 +1,42 @@
 body {
   background-color:#ffffff;
 }
+
+#mags {
+  font-family: "Times New Roman", serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.4; /* Adjust line spacing */
+  color: black;
+  text-align: left;
+  word-wrap: break-word; /* Prevents word breaks */
+  word-break: normal; /* Keeps words intact */
+}
+
+#mags .name {
+  margin-bottom: 12px; /* Adds spacing for the name */
+}
+
+#mags .email {
+  margin-bottom: 12px;
+  text-decoration: underline; /* Underlines the email */
+  text-decoration-thickness: 0.25px; /* Thin underline */
+  text-underline-offset: 2px; /* Adds spacing between underline and text */
+}
+
+#mags .bio {
+  margin-bottom: 12px; /* Adds spacing for the bio */
+}
+
+#mags .italic {
+  font-style: italic; /* Makes text italic */
+}
+
+#mags span {
+  display: inline-block; /* Ensures each character can be animated independently */
+  transition: transform 0.2s ease; /* Smooth hover animation */
+}
+
+#mags span.non-interactive {
+  pointer-events: none; /* Prevents these from interacting with the mouse */
+}
