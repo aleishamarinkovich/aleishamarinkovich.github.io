@@ -5,7 +5,7 @@ body {
 #mags {
   font-family: 'Times New Roman', Times, serif;
   font-size: 17px;
-  font-weight: 100;
+  font-weight: 300;
   width: 400px; /* Set the desired width */
   padding: 5px; /* Add padding inside the box */
   border: none; /* Add a border around the box */
@@ -18,7 +18,7 @@ body {
 
 #mags > div {
   display: block;
-  margin-bottom: 15px; /* Adds spacing between each div */
+  margin-bottom: 16px; /* Adds spacing between each div */
 }
 
 #mags .email {
