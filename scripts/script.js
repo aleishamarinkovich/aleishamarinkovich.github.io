@@ -1,3 +1,5 @@
+import DOMpurify from 'dompurify';
+
 document.addEventListener('DOMContentLoaded', () => {
   // Select the element containing the text
   // const magsElement = document.getElementById('mags');
@@ -15,7 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
       // Preserve spaces by converting them to non-breaking spaces
       return char === ' ' ? ' ' : `<span class="letter">${char}</span>`;
     }).join('');
-    element.innerHTML = wrappedText;
+
+    // DOMpurify library it ised here to sanitize the HTML content & prevent XSS attacks. 
+    const cleanText = DOMpurify.sanitize(wrappedText);
+    element.innerHTML = cleanText;
   }
 
   wrapTextInSpans(nameId);
