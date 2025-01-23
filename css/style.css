@@ -34,6 +34,10 @@ body {
   transition: transform 0.2s ease; /* Smooth hover animation */
 }
 
+#mags a {
+  color: black; /* Sets the color of the link */
+}
+
 #mags span.non-interactive {
   pointer-events: none; /* Prevents these from interacting with the mouse */
 }
