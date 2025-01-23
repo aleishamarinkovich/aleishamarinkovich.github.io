@@ -12,20 +12,11 @@ body {
   line-height: 1.4; /* Adjust line spacing */
   color: black;
   text-align: left;
-  word-wrap: break-word; /* Prevents word breaks */
-  word-break: normal; /* Keeps words intact */
 }
 
 #mags > div {
   display: block;
   margin-bottom: 16px; /* Adds spacing between each div */
-  word-wrap: break-word; /* Prevents word breaks */
-  word-break: normal; /* Keeps words intact */
-}
-
-#mags .letter {
-  word-wrap: break-word; /* Prevents word breaks */
-  word-break: normal; /* Keeps words intact */
 }
 
 #mags .email {
