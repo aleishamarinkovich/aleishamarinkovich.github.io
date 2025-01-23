@@ -1,5 +1,5 @@
 body {
-  background-color:#ffffff;
+  background-color: #ffffff;
 }
 
 #mags {
@@ -19,6 +19,13 @@ body {
 #mags > div {
   display: block;
   margin-bottom: 16px; /* Adds spacing between each div */
+  word-wrap: break-word; /* Prevents word breaks */
+  word-break: normal; /* Keeps words intact */
+}
+
+#mags .letter {
+  word-wrap: break-word; /* Prevents word breaks */
+  word-break: normal; /* Keeps words intact */
 }
 
 #mags .email {

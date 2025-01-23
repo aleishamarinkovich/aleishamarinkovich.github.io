@@ -9,33 +9,32 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!getElement) {
         console.error(`Element with ID ${id} not found.`);
       }
+      const wrappedText = getElement.textContent
+        .split('')
+        .map((char) => {
+          // Preserve spaces by converting them to non-breaking spaces
+          return char === ' ' ? ' ' : `<span class="letter">${char}</span>`;
+        })
+        .join('');
+      // DOMpurify library used to sanitize the HTML content & prevent XSS attacks.
+      const cleanText = DOMpurify.sanitize(wrappedText);
+      getElement.innerHTML = cleanText;
     });
-
-    const getTextContent = getElement.textContent;
-    const wrappedText = [...getTextContent]
-      .map((char) => {
-        // Preserve spaces by converting them to non-breaking spaces
-        return char === ' ' ? ' ' : `<span class="letter">${char}</span>`;
-      })
-      .join('');
-    // DOMpurify library used to sanitize the HTML content & prevent XSS attacks.
-    const cleanText = DOMpurify.sanitize(wrappedText);
-    getElement.innerHTML = cleanText;
   }
 
-  wrapTextInSpans(['nameId', 'bioId', 'italicId']);
+  wrapTextInSpans(['name', 'bio', 'italic']);
 
   // Add mouse event listeners
-  nameId.addEventListener('mouseenter', () => {
-    const letters = nameId.querySelectorAll('.letter');
-    letters.forEach((letter, index) => {
-      letter.style.transition = `transform 0.3s ease ${index * 0.05}s`;
+  const letters = document.querySelectorAll('.letter');
+  letters.forEach((letter) => {
+    letter.addEventListener('mouseenter', () => {
+      letter.style.transition = 'transform 0.3s ease';
       letter.style.transform = `translate(${randomOffset()}px, ${randomOffset()}px)`;
     });
   });
 
   // Generate a random offset for animation
   function randomOffset() {
-    return Math.floor(Math.random() * 20 - 10); // Random value between -10 and 10
+    return Math.floor(Math.random() * 300 - 150); // Random value between -10 and 10
   }
 });
