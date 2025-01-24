@@ -20,15 +20,17 @@ document.addEventListener('DOMContentLoaded', () => {
       getElement.innerHTML = cleanText;
     });
   }
-  // wrapWords handles the destruturing of each word into individual characters.
+  // wrapWords handles the destructuring of each word into individual characters.
   // Each character is wrapped in its own a span element for individual animation.
   // Each group of characters that forms a word is then wrapped in a span.
-  // This is so the words can be layed out correctly while still allowing for individual character animation.
+  // This is so the words can be laid out correctly while still allowing for individual character animation.
   function wrapWords(text) {
+    // The words are split and put into an array.
     return text.split(' ').map(wrapWord).join(' ');
   }
-
+  // Destructure each character in the word and wrap it in a span element.
   function wrapWord(wordsToWrap) {
+    // The SPREAD operator destructures the words into individual characters.
     const words = [...wordsToWrap].map(wrapCharacters).join('');
     return `<span class="word">${words}</span>`;
   }
