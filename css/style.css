@@ -1,20 +1,22 @@
 body {
-  background-color:#ffffff;
+  background-color: #ffffff;
 }
 
 #mags {
-  font-family: "Times New Roman", serif;
-  font-size: 12px;
-  font-weight: 400;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+  font-weight: 300;
+  width: 400px; /* Set the desired width */
+  padding: 5px; /* Add padding inside the box */
+  border: none; /* Add a border around the box */
   line-height: 1.4; /* Adjust line spacing */
   color: black;
   text-align: left;
-  word-wrap: break-word; /* Prevents word breaks */
-  word-break: normal; /* Keeps words intact */
 }
 
-#mags .name {
-  margin-bottom: 12px; /* Adds spacing for the name */
+#mags > div {
+  display: block;
+  margin-bottom: 16px; /* Adds spacing between each div */
 }
 
 #mags .email {
@@ -23,11 +25,6 @@ body {
   text-decoration-thickness: 0.25px; /* Thin underline */
   text-underline-offset: 2px; /* Adds spacing between underline and text */
 }
-
-#mags .bio {
-  margin-bottom: 12px; /* Adds spacing for the bio */
-}
-
 #mags .italic {
   font-style: italic; /* Makes text italic */
 }
@@ -35,6 +32,10 @@ body {
 #mags span {
   display: inline-block; /* Ensures each character can be animated independently */
   transition: transform 0.2s ease; /* Smooth hover animation */
+}
+
+#mags a {
+  color: black; /* Sets the color of the link */
 }
 
 #mags span.non-interactive {
