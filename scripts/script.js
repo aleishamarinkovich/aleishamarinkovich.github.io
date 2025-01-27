@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const letters = document.querySelectorAll('.letter');
     letters.forEach((letter) => {
       letter.addEventListener('mouseenter', () => {
-        letter.style.transition = 'transform 0.7s ease';
+        letter.style.transition = 'transform 1s ease';
         letter.style.transform = `translate(${randomOffset()}px, ${randomOffset()}px)`;
       });
     });
