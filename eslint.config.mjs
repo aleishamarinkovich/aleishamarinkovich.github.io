@@ -1,9 +1,8 @@
-import globals from "globals";
-import pluginJs from "@eslint/js";
-
+import globals from 'globals';
+import pluginJs from '@eslint/js';
 
 /** @type {import('eslint').Linter.Config[]} */
-export default { 
+export default {
   languageOptions: { globals: globals.browser },
   ...pluginJs.configs.recommended,
   rules: {
@@ -11,6 +10,3 @@ export default {
     quotes: ['error', 'single'], // Use single quotes
   },
 };
-  
-  
-  
