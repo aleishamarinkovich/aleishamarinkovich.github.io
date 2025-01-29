@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Outfit:wght@100..900&display=swap');
+
 body {
   background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #mags {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', serif;
+  /* font-family: 'IBM Plex Serif', serif; */
   font-size: 17px;
-  font-weight: 400;
-  margin-top: 12px;
+  font-weight: 200;
+  margin-top: 11px;
   margin-left: 10px;
   width: 400px; /* Set the desired width */
   padding: 0px; /* Add padding inside the box */
