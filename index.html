@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+<p id="name">Aleisha Marinkovich</p>
+<p id="email">marinkovicha@gmail.com</p>
+<br/>
+<p id="blurb">Testing testing testing testing testing testing testing <br/>testing testing testing testing testing testinge tc</p>
+<br />
+<p id="portfolio">Portfolio available upon request.</p>
+</body>
+<script>
+    // Setup
+    const elements = {}
+    let paragraphs = document.getElementsByTagName("p");
+    for (let i = 0; i < paragraphs.length; i++){
+        const paragraph = paragraphs[i]
+        const tempElements = []
+
+        let counter = 0
+        paragraph.innerText.split('').forEach(element => {
+            tempElements.push(`<span id="${paragraph.id}-${counter}">${element}</span>`)
+            counter++
+        })
+        paragraph.innerHTML = tempElements.join('')
+
+        elements[paragraph.id] = tempElements
+    }
+
+    setTimeout(function(){
+
+
+    }, 1000)
+</script>
+</html>
