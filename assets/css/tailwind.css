@@ -368,6 +368,7 @@
     --default-mono-font-family: var(--font-mono);
     --default-mono-font-feature-settings: var(--font-mono--font-feature-settings);
     --default-mono-font-variation-settings: var(--font-mono--font-variation-settings);
+    --color-email-grey: #676767;
   }
 }
 @layer base {
@@ -512,95 +513,107 @@
   }
 }
 @layer utilities {
-  .m-\[8\] {
-    margin: 8;
+  .mt-\[7px\] {
+    margin-top: 7px;
+  }
+  .mr-\[10px\] {
+    margin-right: 10px;
+  }
+  .mb-\[8px\] {
+    margin-bottom: 8px;
+  }
+  .ml-\[10px\] {
+    margin-left: 10px;
   }
   .w-full {
     width: 100%;
   }
+  .max-w-\[calc\(100\%-20px\)\] {
+    max-width: calc(100% - 20px);
+  }
   .font-\[Soehne\] {
     font-family: Soehne;
   }
-  .text-\[\#000000\]\/75 {
-    color: color-mix(in oklab, #000000 75%, transparent);
+  .text-\[\#000000\]\/100 {
+    color: color-mix(in oklab, #000000 100%, transparent);
   }
-  .text-\[\#4f4fff\]\/75 {
-    color: color-mix(in oklab, #4f4fff 75%, transparent);
+  .text-\[\#4f4fff\]\/100 {
+    color: color-mix(in oklab, #4f4fff 100%, transparent);
   }
-  .text-\[\#4f80ff\]\/75 {
-    color: color-mix(in oklab, #4f80ff 75%, transparent);
+  .text-\[\#4f80ff\]\/100 {
+    color: color-mix(in oklab, #4f80ff 100%, transparent);
   }
-  .text-\[\#4fff4f\]\/75 {
-    color: color-mix(in oklab, #4fff4f 75%, transparent);
+  .text-\[\#4fff4f\]\/100 {
+    color: color-mix(in oklab, #4fff4f 100%, transparent);
   }
-  .text-\[\#4fffff\]\/75 {
-    color: color-mix(in oklab, #4fffff 75%, transparent);
+  .text-\[\#4fffff\]\/100 {
+    color: color-mix(in oklab, #4fffff 100%, transparent);
   }
-  .text-\[\#000088\]\/75 {
-    color: color-mix(in oklab, #000088 75%, transparent);
+  .text-\[\#000088\]\/100 {
+    color: color-mix(in oklab, #000088 100%, transparent);
   }
-  .text-\[\#99cc00\]\/75 {
-    color: color-mix(in oklab, #99cc00 75%, transparent);
+  .text-\[\#99cc00\]\/100 {
+    color: color-mix(in oklab, #99cc00 100%, transparent);
   }
-  .text-\[\#005500\]\/75 {
-    color: color-mix(in oklab, #005500 75%, transparent);
+  .text-\[\#005500\]\/100 {
+    color: color-mix(in oklab, #005500 100%, transparent);
   }
-  .text-\[\#9933ff\]\/75 {
-    color: color-mix(in oklab, #9933ff 75%, transparent);
+  .text-\[\#9933ff\]\/100 {
+    color: color-mix(in oklab, #9933ff 100%, transparent);
   }
-  .text-\[\#009999\]\/75 {
-    color: color-mix(in oklab, #009999 75%, transparent);
+  .text-\[\#009999\]\/100 {
+    color: color-mix(in oklab, #009999 100%, transparent);
   }
-  .text-\[\#9999ff\]\/75 {
-    color: color-mix(in oklab, #9999ff 75%, transparent);
+  .text-\[\#9999ff\]\/100 {
+    color: color-mix(in oklab, #9999ff 100%, transparent);
   }
-  .text-\[\#660066\]\/75 {
-    color: color-mix(in oklab, #660066 75%, transparent);
+  .text-\[\#660066\]\/100 {
+    color: color-mix(in oklab, #660066 100%, transparent);
   }
-  .text-\[\#666600\]\/75 {
-    color: color-mix(in oklab, #666600 75%, transparent);
+  .text-\[\#666600\]\/100 {
+    color: color-mix(in oklab, #666600 100%, transparent);
   }
   .text-\[\#676767\] {
     color: #676767;
   }
-  .text-\[\#808080\]\/75 {
-    color: color-mix(in oklab, #808080 75%, transparent);
+  .text-\[\#808080\]\/100 {
+    color: color-mix(in oklab, #808080 100%, transparent);
   }
-  .text-\[\#990000\]\/75 {
-    color: color-mix(in oklab, #990000 75%, transparent);
+  .text-\[\#990000\]\/100 {
+    color: color-mix(in oklab, #990000 100%, transparent);
   }
-  .text-\[\#990033\]\/75 {
-    color: color-mix(in oklab, #990033 75%, transparent);
+  .text-\[\#990033\]\/100 {
+    color: color-mix(in oklab, #990033 100%, transparent);
   }
-  .text-\[\#993300\]\/75 {
-    color: color-mix(in oklab, #993300 75%, transparent);
+  .text-\[\#993300\]\/100 {
+    color: color-mix(in oklab, #993300 100%, transparent);
   }
-  .text-\[\#996600\]\/75 {
-    color: color-mix(in oklab, #996600 75%, transparent);
+  .text-\[\#996600\]\/100 {
+    color: color-mix(in oklab, #996600 100%, transparent);
   }
-  .text-\[\#bbbbbb\]\/75 {
-    color: color-mix(in oklab, #bbbbbb 75%, transparent);
+  .text-\[\#bbbbbb\]\/100 {
+    color: color-mix(in oklab, #bbbbbb 100%, transparent);
   }
-  .text-\[\#ff4f4f\]\/75 {
-    color: color-mix(in oklab, #ff4f4f 75%, transparent);
+  .text-\[\#ff4f4f\]\/100 {
+    color: color-mix(in oklab, #ff4f4f 100%, transparent);
   }
-  .text-\[\#ff4fff\]\/75 {
-    color: color-mix(in oklab, #ff4fff 75%, transparent);
+  .text-\[\#ff4fff\]\/100 {
+    color: color-mix(in oklab, #ff4fff 100%, transparent);
   }
-  .text-\[\#ff99cc\]\/75 {
-    color: color-mix(in oklab, #ff99cc 75%, transparent);
+  .text-\[\#ff99cc\]\/100 {
+    color: color-mix(in oklab, #ff99cc 100%, transparent);
   }
-  .text-\[\#ff6600\]\/75 {
-    color: color-mix(in oklab, #ff6600 75%, transparent);
+  .text-\[\#ff6600\]\/100 {
+    color: color-mix(in oklab, #ff6600 100%, transparent);
   }
-  .text-\[\#ff9999\]\/75 {
-    color: color-mix(in oklab, #ff9999 75%, transparent);
+  .text-\[\#ff9999\]\/100 {
+    color: color-mix(in oklab, #ff9999 100%, transparent);
   }
-  .text-\[\#ff99000\]\/75 {
-    color: color-mix(in oklab, #ff99000 75%, transparent);
+  .text-\[\#ff99000\]\/100 {
+    color: color-mix(in oklab, #ff99000 100%, transparent);
   }
-  .text-\[\#ffff4f\]\/75 {
-    color: color-mix(in oklab, #ffff4f 75%, transparent);
+  .text-\[\#ffff4f\]\/100 {
+    color: color-mix(in oklab, #ffff4f 100%, transparent);
   }
   .underline {
     text-decoration-line: underline;

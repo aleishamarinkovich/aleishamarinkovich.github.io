@@ -6,47 +6,47 @@
     <link href="./assets/css/tailwind.css" rel="stylesheet">
 </head>
 <body>
-<div class="w-full sm:w-1/3 m-[8]">
+<div class="max-w-[calc(100%-20px)] w-full sm:w-1/3 ml-[10px] mb-[8px] mt-[7px] mr-[10px]">
     <p id="name">Aleisha Marinkovich</p>
-    <a class="text-[#676767] underline" href="mailto:marinkovicha@gmail.com" id="email" >marinkovicha@gmail.com</a>
+    <a class="text-[#676767] underline" href="mailto:marinkovicha@gmail.com" id="email">marinkovicha@gmail.com</a>
     <br />
     <br />
-    <p id="blurb">Aleisha is a graphic designer and book builder of Pākehā (New Zealand European) and Croatian descent. (New Zealand European) and Croatian descent. Working across design, research, and occasionally writing, she is driven by a love of stories, community and archives.</p>
+    <p id="blurb">Aleisha is a graphic designer and book builder of Pākehā (New Zealand European) and Croatian descent. Working across design, research, and occasionally writing, she is driven by a love of stories, community and archives.</p>
     <br />
     <p id="portfolio">Portfolio available upon request.</p>
 </div>
 </body>
 <script>
     const colours = {
-        [0]: "text-[#000000]/75",
-        [1]: "text-[#9933ff]/75",
-        [2]: "text-[#993300]/75",
-        [3]: "text-[#009999]/75",
-        [4]: "text-[#005500]/75",
-        [5]: "text-[#ff6600]/75",
-        [6]: "text-[#ff99000]/75",
-        [7]: "text-[#808080]/75",
-        [8]: "text-[#ffff4f]/75",
-        [9]: "text-[#4fffff]/75",
-        [10]: "text-[#ff4fff]/75",
-        [11]: "text-[#4f4fff]/75",
-        [12]: "text-[#4fff4f]/75",
-        [13]: "text-[#ff4f4f]/75",
-        [14]: "text-[#4f80ff]/75",
-        [15]: "text-[#bbbbbb]/75",
-        [16]: "text-[#660066]/75",
-        [17]: "text-[#996600]/75",
-        [18]: "text-[#99cc00]/75",
-        [19]: "text-[#990033]/75",
-        [20]: "text-[#ff9999]/75",
-        [21]: "text-[#666600]/75",
-        [22]: "text-[#990000]/75",
-        [23]: "text-[#9999ff]/75",
-        [24]: "text-[#ff99cc]/75",
-        [25]: "text-[#000088]/75",
+        [0]: "text-[#000000]/100",
+        [1]: "text-[#9933ff]/100",
+        [2]: "text-[#993300]/100",
+        [3]: "text-[#009999]/100",
+        [4]: "text-[#005500]/100",
+        [5]: "text-[#ff6600]/100",
+        [6]: "text-[#ff99000]/100",
+        [7]: "text-[#808080]/100",
+        [8]: "text-[#ffff4f]/100",
+        [9]: "text-[#4fffff]/100",
+        [10]: "text-[#ff4fff]/100",
+        [11]: "text-[#4f4fff]/100",
+        [12]: "text-[#4fff4f]/100",
+        [13]: "text-[#ff4f4f]/100",
+        [14]: "text-[#4f80ff]/100",
+        [15]: "text-[#bbbbbb]/100",
+        [16]: "text-[#660066]/100",
+        [17]: "text-[#996600]/100",
+        [18]: "text-[#99cc00]/100",
+        [19]: "text-[#990033]/100",
+        [20]: "text-[#ff9999]/100",
+        [21]: "text-[#666600]/100",
+        [22]: "text-[#990000]/100",
+        [23]: "text-[#9999ff]/100",
+        [24]: "text-[#ff99cc]/100",
+        [25]: "text-[#000088]/100",
     }
     const baseTextClass = `default-txt-black font-[Soehne]`
-    const baseLinkClass = `default-txt[#676767] underline font-[Soehne]`
+    const baseLinkClass = `default-txt-email-grey underline font-[Soehne]`
     const colorIndices = Object.keys(colours).map(Number);
 
     const elements = {}
