@@ -534,6 +534,10 @@
   .font-\[Soehne\] {
     font-family: Soehne;
   }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
   .text-\[\#000000\]\/100 {
     color: color-mix(in oklab, #000000 100%, transparent);
   }
@@ -615,12 +619,24 @@
   .text-\[\#ffff4f\]\/100 {
     color: color-mix(in oklab, #ffff4f 100%, transparent);
   }
+  .no-underline {
+    text-decoration-line: none;
+  }
   .underline {
     text-decoration-line: underline;
+  }
+  .underline-offset-6 {
+    text-underline-offset: 6px;
   }
   .sm\:w-1\/3 {
     @media (width >= 40rem) {
       width: calc(1/3 * 100%);
+    }
+  }
+  .sm\:text-3xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
   }
 }

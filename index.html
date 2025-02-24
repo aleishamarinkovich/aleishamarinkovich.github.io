@@ -8,7 +8,7 @@
 <body>
 <div class="max-w-[calc(100%-20px)] w-full sm:w-1/3 ml-[10px] mb-[8px] mt-[7px] mr-[10px]">
     <p id="name">Aleisha Marinkovich</p>
-    <a class="text-[#676767] underline" href="mailto:marinkovicha@gmail.com" id="email">marinkovicha@gmail.com</a>
+    <a class="text-[#676767] no-underline" href="mailto:marinkovicha@gmail.com" id="email">marinkovicha@gmail.com</a>
     <br />
     <br />
     <p id="blurb">Aleisha is a graphic designer and book builder of Pākehā (New Zealand European) and Croatian descent. Working across design, research, and occasionally writing, she is driven by a love of stories, community and archives.</p>
@@ -45,8 +45,8 @@
         [24]: "text-[#ff99cc]/100",
         [25]: "text-[#000088]/100",
     }
-    const baseTextClass = `default-txt-black font-[Soehne]`
-    const baseLinkClass = `default-txt-email-grey underline font-[Soehne]`
+    const baseTextClass = `default-txt-black text-xl sm:text-3xl font-[Soehne]`
+    const baseLinkClass = `default-txt-email-grey text-xl sm:text-3xl underline underline-offset-6 font-[Soehne]`
     const colorIndices = Object.keys(colours).map(Number);
 
     const elements = {}
