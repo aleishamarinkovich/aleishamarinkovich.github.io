@@ -538,9 +538,9 @@
     font-size: var(--text-md);
     line-height: var(--tw-leading, var(--text-md--line-height));
   }
-  .leading-8 {
-    --tw-leading: calc(var(--spacing) * 8);
-    line-height: calc(var(--spacing) * 8);
+  .leading-snug {
+    --tw-leading: calc(var(--spacing) * 1.375);
+    line-height: calc(var(--spacing) * 1.375);
   }
   .tracking-tight {
     --tw-tracking: var(--tracking-tight);
