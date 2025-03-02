@@ -534,9 +534,9 @@
   .font-\[Soehne\] {
     font-family: Soehne;
   }
-  .text-lg {
-    font-size: var(--text-lg);
-    line-height: var(--tw-leading, var(--text-lg--line-height));
+  .text-md {
+    font-size: var(--text-md);
+    line-height: var(--tw-leading, var(--text-md--line-height));
   }
   .leading-6 {
     --tw-leading: calc(var(--spacing) * 6);
